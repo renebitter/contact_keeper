@@ -13,7 +13,6 @@ const ContactSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-
   phone: {
     type: String,
   },
@@ -21,7 +20,6 @@ const ContactSchema = mongoose.Schema({
     type: String,
     default: 'personal',
   },
-
   date: {
     type: Date,
     default: Date.now,
