@@ -18,7 +18,6 @@ const App = () => {
               <Route exact path='/about' component={About} />
             </Switch>
           </div>
-          React App
         </Fragment>
       </Router>
     </ContactState>
