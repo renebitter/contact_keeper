@@ -8,7 +8,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     phone: '',
-    type: '',
+    type: 'personal',
   });
 
   const { name, email, phone, type } = contact;
@@ -26,7 +26,7 @@ const ContactForm = () => {
       name: '',
       email: '',
       phone: '',
-      type: '',
+      type: 'personal',
     });
   };
 
@@ -66,17 +66,19 @@ const ContactForm = () => {
       <input
         type='radio'
         name='type'
-        value='personal'
+        value='professional'
         checked={type === 'professional'}
         onChange={onChange}
       />
       Professional
       <div>
-        <input
+        <button
           type='subimt'
           value='Add Contact'
           className='btn btn-primary btn-block'
-        />
+        >
+          Add Contact
+        </button>
       </div>
     </form>
   );
