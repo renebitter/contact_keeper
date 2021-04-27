@@ -221,6 +221,7 @@ img {
   background: var(--light-color);
   color: #333;
   border-radius: 5px;
+  float: right;
 }
 
 .alert {

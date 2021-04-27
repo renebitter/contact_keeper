@@ -24,7 +24,7 @@ const ContactState = (props) => {
       },
       {
         id: 2,
-        name: 'Jessie Pinkman',
+        name: 'Jesse Pinkman',
         email: 'bitch@bitch.me',
         phone: '222-222-1234',
         type: 'personal',
@@ -32,7 +32,7 @@ const ContactState = (props) => {
       {
         id: 3,
         name: 'Gustavo Fring',
-        email: 'pollo@hermanos.com.mx',
+        email: 'lospollos@hermanos.com.mx',
         phone: '333-222-6666',
         type: 'professional',
       },
