@@ -35,10 +35,8 @@ const Register = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (name === '' || email === '' || password === '') {
-      console.log('empty');
       setAlert('Please enter all fields', 'danger');
     } else if (password !== password2) {
-      console.log('pw do not match');
       setAlert('Passwords do not match', 'danger');
     } else {
       register({
@@ -46,7 +44,6 @@ const Register = (props) => {
         email,
         password,
       });
-      console.log('register submit');
     }
   };
 

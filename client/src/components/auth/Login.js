@@ -14,6 +14,11 @@ const Login = (props) => {
       props.history.push('/');
     }
 
+    if (error === 'Invalid email') {
+      setAlert(error, 'danger');
+      clearErrors();
+    }
+
     if (error === 'Invalid Credentials') {
       setAlert(error, 'danger');
       clearErrors();
@@ -26,7 +31,7 @@ const Login = (props) => {
     password: '',
   });
 
-  const { name, email, password, password2 } = user;
+  const { email, password } = user;
 
   const onChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
 
