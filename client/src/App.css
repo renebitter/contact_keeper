@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
+  --primary-color: #28a745;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -71,7 +71,7 @@ img {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .text-dark {
@@ -230,11 +230,26 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+}
+
+.alert i {
+  margin-right: 5px;
+}
+
+.bg-primary {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.badge-primary {
+  background: var(--dark-color);
+  color: #fff;
 }
 
 .btn-primary,
-.bg-primary,
-.badge-primary,
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
@@ -362,7 +377,7 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--dark-color);
   opacity: 0.9;
   margin-bottom: 1rem;
 }
@@ -383,6 +398,14 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+.main-title i {
+  margin-right: 15px;
+}
+
+.fa-sign-out-alt::before {
+  margin-right: 3px;
 }
 
 /* Animation (Add After) */
